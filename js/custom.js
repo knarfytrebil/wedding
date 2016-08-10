@@ -15,7 +15,7 @@ function go_page(page) {
         page = 0
         page_index = 0
     }
-    if (page == 3) {
+    if (page >= 3) {
         page = 3
         page_index = 3
     }
@@ -36,7 +36,7 @@ $('.row .i_page').on('touchstart', function(e) {
 $('.row .i_page').on('touchend', function(e) {
     if (moving) { return }
     x = y = 0
-    if (Math.abs(delta_y) >= MOVE_THRESH) {
+    if (Math.abs(delta_y) > MOVE_THRESH) {
         page_index -= (1 * delta_y / Math.abs(delta_y))
     }
     delta_x = delta_y = 0
