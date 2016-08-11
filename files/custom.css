@@ -44,9 +44,9 @@ body, html {
     bottom: 15%;
 }
 .v_line_s {
-    font-size: 1rem;
+    font-size: calc((100vw/3.75) * 0.25);
     width: 1.4rem;
-    line-height: 1.4rem;
+    line-height: calc((100vw/3.75) * 0.32);
     display: inline-block;
     font-family: 宋体;
     font-weight: bolder;
