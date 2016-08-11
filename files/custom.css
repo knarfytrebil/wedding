@@ -115,7 +115,6 @@ body, html {
     text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.48);
 }
 .v_line_s .line {
-    border-left: 2px dashed #ffb308;
     display: inline-block;
     padding-left: 0px;
 }
