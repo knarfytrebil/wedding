@@ -44,7 +44,7 @@ body, html {
     bottom: 15%;
 }
 .v_line_s {
-    font-size: calc((100vw/3.75) * 0.22);
+    font-size: calc((100vw/3.75) * 0.21);
     width: 1.4rem;
     line-height: calc((100vw/3.75) * 0.29);
     display: inline-block;
