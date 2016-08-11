@@ -66,6 +66,4 @@ $('.choice.c_3').on('click', function(){
 
 $('.overlay').on('click', function(e){
     $(this).fadeOut()
-    page_index += 1
-    go_page(page_index) 
 })
