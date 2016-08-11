@@ -20,7 +20,7 @@ body, html {
 
 @media screen and (max-width: 450px) {
     body {
-	    background: -webkit-linear-gradient(top, #ff2929, #c000ff);
+		background: -webkit-linear-gradient(top, #ff2929, #ff0065);
     }
 }
 
