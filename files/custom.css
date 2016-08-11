@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'handwriting';
+  src: url('../font/hand.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'cligraphy';
+  src: url('../font/cligraphy.ttf')  format('truetype');
+}
+
+body, html {
+	-moz-user-select:none;/*火狐*/
+	-webkit-user-select:none;/*webkit浏览器*/
+	-ms-user-select:none;/*IE10*/
+	-khtml-user-select:none;/*早期浏览器*/
+	user-select:none;
+	background: rgba(255, 0, 0, 0.76); 
+    overflow: hidden;
+	height: 100%;
+}
+
+.swiper-slide {
+    background-color: #D24858 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #EAB05E !important;
+}
+
+.v_line {
+    margin-top: calc(50vh - 159px);
+    font-size: 65px;
+    width: 65px;
+    line-height: 75px;
+    display: inline-block;
+    font-family: 宋体;
+    font-weight: bolder;
+    /* color: #ffb820; */
+    color: #FDEECD;
+    text-shadow: 2px 2px 7px rgba(23, 23, 23, 0.28);
+    zoom: 0.8;
+    /* margin-left: 92px; */
+    position: absolute;
+    right: 68px;
+    bottom: 15%;
+}
+.v_line_s {
+    font-size: 1.4rem;
+    width: 1.4rem;
+    line-height: 1.7rem;
+    display: inline-block;
+    font-family: 宋体;
+    font-weight: bolder;
+    color: #FDEECD;
+    text-shadow: 2px 2px 7px rgba(23, 23, 23, 0.28);
+    margin-right: 10vh;
+    position: absolute;
+    right: 45px;
+    bottom: 50px;
+    margin: 0px;
+}
+.v_line_s#last {
+    right: 102px;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+.i_page .choices {
+/*	position: absolute;
+	bottom: 15%;
+    left: calc((100vw - 190px)/2);*/
+}
+.v_line_s.slim {
+    margin-right: 5vh;
+}
+
+.v_line_s.slim#first {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+}
+
+.v_line_s.slim.choice {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    width: 2rem;
+    padding: 6px;
+    border-radius: 5px;
+    height: 25%;
+    margin-right: 10px;
+    border: 1px dashed #FDEECD;
+    position: absolute;
+    bottom: 15%;
+}
+
+.v_line_s.slim.choice.c_1 {
+	left: 10%;
+}
+.v_line_s.slim.choice.c_2 {
+	left: 30%;
+}
+.v_line_s.slim.choice.c_3 {
+	left: 50%;
+}
+
+.v_line_s.slim.choice:active {
+	background-color: black;	
+	color: white;
+	transition: all 300ms ease-in-out;
+}
+.v_line_s .name {
+    color: white;
+    font-weight: 100;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.48);
+}
+.v_line_s .line {
+    border-left: 2px dashed #493831;
+    display: inline-block;
+    padding-left: 0px;	
+}
+.overlay {
+    color: white;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 0px;
+    position: fixed;
+    text-align: left;
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+.overlay span {
+	font-size: 3.5rem;
+    width: 100%;
+    display: block;
+}
