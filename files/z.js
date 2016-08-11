@@ -30,3 +30,13 @@ $('.choice.c_3').on('click', function(){
     })
 })
 
+
+$('#hint').on('click', function(){
+    $('.overlay.c_3').fadeIn(function(){
+		$('.overlay').one('click', function(e){
+		    $(this).fadeOut(function(){
+		    	$(this).css('display','none')
+		    })
+		})
+    })
+})

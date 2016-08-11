@@ -176,6 +176,10 @@ body, html {
     color: white;
 }
 
+#hint {
+    z-index: 50;
+}
+
 @keyframes beam {
     0%   {
         left: calc((100vw - 50px)/2);
