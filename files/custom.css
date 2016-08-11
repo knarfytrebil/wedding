@@ -139,3 +139,53 @@ body, html {
 .overlay div {
     margin: 20px;
 }
+.hint {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100%;
+    border: 5px solid #FDEECD;
+    font-style: italic;
+    font-family: cursive;
+    color: #FDEECD;
+    bottom: 50px;
+    position: absolute;
+}
+.hint.circle {
+    animation: beam 1s infinite;
+    -moz-animation: beam 1s infinite; /* Firefox */
+    -webkit-animation: beam 1s infinite;  /* Safari 和 Chrome */
+    -o-animation: beam 1s infinite;   /* Opera */
+
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100%;
+    border: 5px solid #FDEECD;
+    font-style: italic;
+    font-family: cursive;
+    color: #FDEECD;
+    bottom: 50px;
+    position: absolute;
+}
+
+.hint:active {
+    border-color:white;
+    color: white;
+}
+
+@keyframes beam {
+    0%   {
+        width: 50px;
+        height: 50px; 
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        width: 1000px;
+        height: 1000px;        
+        bottom: -400px;
+    }
+}
