@@ -150,6 +150,7 @@ body, html {
     color: #FDEECD;
     bottom: 50px;
     position: absolute;
+    left: calc((100vw - 50px)/2);
 }
 .hint.circle {
     animation: beam 1s infinite;
@@ -167,6 +168,7 @@ body, html {
     color: #FDEECD;
     bottom: 50px;
     position: absolute;
+    left: calc((100vw - 50px)/2);
 }
 
 .hint:active {
@@ -176,6 +178,7 @@ body, html {
 
 @keyframes beam {
     0%   {
+        left: calc((100vw - 50px)/2);
         width: 50px;
         height: 50px; 
     }
@@ -183,9 +186,11 @@ body, html {
         opacity: 0;
     }
     100% {
+        left: calc((100vw - 200px)/2);
         opacity: 0;
-        width: 1000px;
-        height: 1000px;        
-        bottom: -400px;
+        width: 200px;
+        height: 200px;        
+        bottom: -25px;
+        border-color: #D24858;
     }
 }
