@@ -1,6 +1,7 @@
 var swiper = new Swiper('.swiper-container', {
     pagination: '.swiper-pagination',
-    paginationClickable: true
+    paginationClickable: true,
+    effect: 'coverflow'
 });
 
 function unload() {
