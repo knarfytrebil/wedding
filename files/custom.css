@@ -6,6 +6,35 @@
   font-family: 'cligraphy';
   src: url('../font/cligraphy.ttf')  format('truetype');
 }
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.woff') format('woff'); /* chrome、firefox */
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont.rt {
+    position: absolute;
+    top: 2px;
+    right: -1px;
+    font-size: 4rem;
+    line-height: 55px;
+    color: white;
+}
+.iconfont.lb {
+    position: absolute;
+    font-size: 4rem;
+    color: white;
+    transform: rotate(180deg);
+    bottom: -8px;
+    left: -1px;
+}
 
 body, html {
 	-moz-user-select:none;/*火狐*/
@@ -48,7 +77,7 @@ body, html {
     width: 1.4rem;
     line-height: calc((100vw/3.75) * 0.28);
     display: inline-block;
-    font-family: 宋体;
+    font-family: sans-serif;
     font-weight: bolder;
     color: #FDEECD;
     text-shadow: 2px 2px 7px rgba(23, 23, 23, 0.83);
@@ -121,6 +150,7 @@ body, html {
     padding-left: 0px;
 }
 .overlay {
+    font-family: sans-serif;
     color: white;
     display: none;
     width: 100%;
@@ -130,7 +160,6 @@ body, html {
     position: fixed;
     text-align: left;
     font-size: 1.8rem;
-
     z-index: 100;
 }
 .overlay span {
@@ -147,8 +176,7 @@ body, html {
     line-height: 50px;
     border-radius: 100%;
     border: 5px solid #EAB05E;
-    font-style: italic;
-    font-family: cursive;
+    font-family: sans-serif;
     color: #FDEECD;
     bottom: 50px;
     position: absolute;
@@ -203,35 +231,113 @@ body, html {
 }
 
 .swiper-container {
-    box-shadow: inset 0 0 25px 3px black;
+    /*box-shadow: inset 0 0 25px 3px black;*/
 }
 .couple {
-    width: 70vw;
-    height: 107vw;
+    width: 60vw;
+    height: 92vw;
     position: absolute;
-    top: 15%;
-    left: 15vw;
+    top: calc(50vh - 46vw);
+    left: 20vw;
     background: url(./couple.jpg);
     background-size: cover;
     border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.49);
+    /*box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.49);*/
 }
-.couple .top {
-    top: 0px;
-    height: 20px;
-    width: 20px;
+.top {
+    top: 3px;
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    position: absolute;
+    left: 4px;
+    font-size: 3rem !important;
+    transform: rotate(180deg);
+    /*text-shadow: -2px -2px 7px rgba(0, 0, 0, 0.3);*/
+    color: #D24858;
+}
+.bottom {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    right: 4px;
+    bottom: 3px;
+    font-size: 3rem !important;
+    /*text-shadow: -2px -2px 7px rgba(0, 0, 0, 0.3);*/
+    color: #D24858;
+}
+.xi {
+    font-size: 4rem;
+    line-height: 6rem;
+    font-family: sans-serif;
+    width: 6rem;
+    height: 6rem;
+    border: 6px solid white;
+    border-radius: 100%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: calc(50vw - 3rem);
+}
+.front {
+    width: 100vw;
     display: inline-block;
     position: absolute;
     left: 0px;
-    background: #D24858;
-    border-radius: 0 0 110% 0;
+    color: white;
+    font-family: sans-serif;
 }
-.couple .bottom {
-    height: 30px;
-    width: 30px;
+.front.l_1 {
+    bottom: 40%;
+}
+.front.l_2 {
+    bottom: 35%;
+}
+.swiper-pagination-bullet {
+    width: 3px !important;
+    height: 3px !important;
+}
+.dl {
     position: absolute;
-    right: -10px;
-    bottom: -10px;
-    background: #D24858;
-    border-radius: 100% 0 0 0;
+    color: wheat;
+    font-family: sans-serif;
+    background-color: #D24858;
+    top: 45px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.67);
+}
+.dl.hp {
+    width: 60vw;
+    left: 0px;
+    line-height: 2.2rem;
+    left: 20vw;
+}
+.dl.xl {
+    width: 2.2rem;
+    height: 75vh;
+    left: 15px;
+    padding-top: 20px;
+    line-height: 1.4rem;
+}
+.dl.sl {
+    width: 2.2rem;
+    height: 75vh;
+    right: 15px;
+    padding-top: 20px;
+    line-height: 1.4rem;
+}
+.invitation {
+    font-family: sans-serif;
+    color: wheat;
+    margin: 27px;
+    text-align: left;
+    line-height: 2rem;
+}
+.itenary {
+    text-align: left;
+    font-family: sans-serif;
+    line-height: 2rem;
+    list-style-type: none;
+    color: wheat;
+    font-size: 1.1rem;
+    padding: 0px;
 }
