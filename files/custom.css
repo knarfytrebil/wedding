@@ -341,3 +341,10 @@ body, html {
     font-size: 1.1rem;
     padding: 0px;
 }
+.save_date {
+    background: url(./save_date.jpg);
+    width: 90vw;
+    height: 60vw;
+    background-size: cover;
+    box-shadow: 1px 1px 8px black;
+}
