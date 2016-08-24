@@ -13,3 +13,11 @@ $('#hint').on('click', function(){
 		})
     })
 })
+
+$(function{
+	if(navigator.userAgent.match(/MicroMessenger/i)){
+		var weixinShareLogo = 'http://path/to/your/image.png';
+		$('body').prepend('<div style=" overflow:hidden; width:0px; height:0; margin:0 auto; position:absolute; top:-800px;"><img src="'+ weixinShareLogo +'"></div>') 
+	};
+});
+
